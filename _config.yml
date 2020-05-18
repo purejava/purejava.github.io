@@ -1,0 +1,36 @@
+# Site settings
+title: Ralph Plawetzki
+description: 'Business Card Page'
+url: 'https://purejava.org'
+baseurl: ''
+profilepic: '/images/rp.png'
+bkimage: '/images/mac_new_york.jpg'
+google_analytics: UA-XXXXXX-X
+font_awesome: '86add33386.js'
+
+author:
+  name: 'Ralph Plawetzki'
+  email: ralph@purejava.org
+  twitter_username: rplawetzki
+#  facebook_username: never
+  github_username:  purejava
+  xing_username:  Ralph_Plawetzki
+#  meetup_name: Azure-Meetup-Rostock-MV
+
+# Build settings
+destination: _site
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+#plugins: ['jekyll-paginate']
+exclude: ['screenshot-overview.png']

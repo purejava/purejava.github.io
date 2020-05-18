@@ -1,0 +1,14 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: purejava website
+  gh_user: purejava
+  repo: purejava.github.io
+  img: https://raw.githubusercontent.com/purejava/purejava.github.io/master/screenshot-overview.png
+  desc: This website.
+
+- name: Cryptomator
+  gh_user: cryptomator
+  repo: cryptomator
+  img: https://cryptomator.org/presskit/cryptomator-logo.png
+  desc: I am contributing to this A code quality open source project.
