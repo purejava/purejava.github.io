@@ -12,3 +12,9 @@
   repo: cryptomator
   img: https://cryptomator.org/presskit/cryptomator-logo.png
   desc: I am contributing to this A code quality open source project.
+
+- name: seahorse-nautilus-ext
+  gh_user: gnome
+  repo: seahorse-nautilus
+  img: https://wiki.gnome.org/Apps/Files/Header?action=AttachFile&do=get&target=logo.png
+  desc: 'This is seahorse-nautilus from upstream with one feature added: the file extension for encrypted files is configurable via a gsetting.'
