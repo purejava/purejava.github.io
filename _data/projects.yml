@@ -1,6 +1,12 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: KWallet
+  gh_user: purejava
+  repo: kdewallet
+  img: https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Breezeicons-apps-48-kwalletmanager.svg/768px-Breezeicons-apps-48-kwalletmanager.svg.png
+  desc: A Java library for storing secrets on linux in a KDE wallet over D-Bus.
+
 - name: purejava website
   gh_user: purejava
   repo: purejava.github.io
