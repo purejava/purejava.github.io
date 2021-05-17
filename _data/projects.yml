@@ -1,6 +1,12 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Scrape AVM security notifications
+  gh_user: purejava
+  repo: scrape-avm-security-notifications
+  img: https://raw.githubusercontent.com/purejava/scrape-avm-security-notifications/master/avm_bot.png
+  desc: This is a bot. It parses a list of AVM security notifications and notices, when new notifications appear on the list.
+
 - name: KeePassXC Proxy Access
   gh_user: purejava
   repo: keepassxc-proxy-access
