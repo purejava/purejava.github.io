@@ -1,6 +1,12 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: KeePassXC Cryptomator Plug-in
+  gh_user: purejava
+  repo: keepassxc-cryptomator
+  img: https://raw.githubusercontent.com/purejava/keepassxc-cryptomator/master/keepassxc-cryptomator.png
+  desc: This plug-in extends the functionality of Cryptomator. With this plug-in dropped-in, Cryptomator can use a KeePassXC database as a backend to store and retrieve passwords for vaults.
+
 - name: Scrape AVM security notifications
   gh_user: purejava
   repo: scrape-avm-security-notifications
