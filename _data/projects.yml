@@ -25,6 +25,12 @@
   img: https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Breezeicons-apps-48-kwalletmanager.svg/768px-Breezeicons-apps-48-kwalletmanager.svg.png
   desc: A Java library for storing secrets on linux in a KDE wallet over D-Bus.
 
+- name: plug-in website
+  gh_user: purejava
+  repo: keepassxc-cryptomator.github.io
+  img: https://raw.githubusercontent.com/purejava/keepassxc-cryptomator.github.io/master/screenshot-overview.png
+  desc: The Website for the KeePassXC Cryptomator Plug-in.
+
 - name: purejava website
   gh_user: purejava
   repo: purejava.github.io
