@@ -16,6 +16,7 @@ author:
   github_username:  purejava
   xing_username:  Ralph_Plawetzki
 #  meetup_name: Azure-Meetup-Rostock-MV
+  matrix_id: '@purejava'
 
 # Build settings
 destination: _site
