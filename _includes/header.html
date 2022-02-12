@@ -96,6 +96,16 @@
               </li>
             {% endif %}
 
+            {% if site.author.gpg_key %}
+              <!-- OpenPGP key -->
+              <li class="navigation__item">
+                <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/{{ site.author.gpg_key }}" title="OpenPGP key fingerprint {{ site.author.gpg_key }}" target="_blank">
+                  <i class="fas fa-key fa-lg"></i>
+                  <span class="label">OpenPGP</span>
+                </a>
+              </li>
+            {% endif %}
+
             {% if site.author.matrix_id %}
               <!-- Matrix.org -->
               <li class="navigation__item">
