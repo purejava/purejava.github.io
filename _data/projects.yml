@@ -1,6 +1,12 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Cryptomator as a Flatpak app
+  gh_user: flathub
+  repo: org.cryptomator.Cryptomator
+  img: https://flatpak.org/img/logo-5bc540c2.svgz
+  desc: Made Cryptomator available on Flathub as a Flatpak app.
+
 - name: KeePassXC Cryptomator Plug-in
   gh_user: purejava
   repo: keepassxc-cryptomator
