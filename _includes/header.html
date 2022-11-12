@@ -21,13 +21,13 @@
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
 
-            {% if site.author.twitter_username %}
-              <!-- Twitter -->
+            {% if site.author.mastodon_username %}
+              <!-- Mastodon -->
               <li class="navigation__item">
-                <a href="https://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                  <!--<i class="icon icon-social-twitter"></i>-->
-                  <i class="fab fa-twitter fa-lg"></i>
-                  <span class="label">Twitter</span>
+                <a href="https://floss.social/{{ site.author.mastodon_username }}" title="{{ site.author.mastodon_username }} on Mastodon" target="_blank">
+                  <!--<i class="icon icon-social-mastodon"></i>-->
+                  <i class="fab fa-mastodon fa-lg"></i>
+                  <span class="label">Mastodon</span>
                 </a>
               </li>
             {% endif %}
