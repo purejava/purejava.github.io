@@ -1,6 +1,12 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Java bindings for libappindicator-gtk3
+  gh_user: purejava
+  repo: libappindicator-gtk3-java
+  img: https://raw.githubusercontent.com/purejava/libappindicator-gtk3-java/develop/libappindicator-gtk3-java.png
+  desc: These are new Java bindings for libappindicator-gtk3, created with jextract on Java 19 preview. They make it possible to use libappindicator-gtk3 from Java applications.
+  
 - name: Java bindings for WinSparkle
   gh_user: purejava
   repo: winsparkle-java
