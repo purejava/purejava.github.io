@@ -19,6 +19,7 @@ author:
   matrix_id: '@purejava'
   gpg_key: 54CF8E1F55CE7E977A0E41895BFB2076ABC48776
   mastodon_username: '@purejava'
+  blog: blog
 
 # Build settings
 destination: _site
