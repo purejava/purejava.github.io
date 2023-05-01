@@ -5,7 +5,7 @@
   gh_user: purejava
   repo: appindicator-gtk3-java
   img: https://raw.githubusercontent.com/purejava/appindicator-gtk3-java/develop/appindicator-gtk3-java.png
-  desc: These are new Java bindings for libayatana-appindicator and libappindicator-gtk3, created with jextract on Java 20 preview. They make it possible to use appindicator from Java applications.
+  desc: These are new Java bindings for libayatana-appindicator and libappindicator-gtk3, created with jextract on Java 20 preview. They make it possible to build appindicator tray icons from Java applications.
   
 - name: Java bindings for WinSparkle
   gh_user: purejava
