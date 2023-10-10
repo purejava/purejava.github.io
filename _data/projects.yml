@@ -1,6 +1,12 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Update indicator for Fedora (GNOME Shell extension)
+  gh_user: purejava
+  repo: fedora-update
+  img: https://raw.githubusercontent.com/purejava/fedora-update/main/icons/fedora-updates-logo.svg
+  desc: GNOME Shell update indicator for Fedora Linux.
+
 - name: Java bindings for libayatana-appindicator and libappindicator-gtk3
   gh_user: purejava
   repo: appindicator-gtk3-java
