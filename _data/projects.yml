@@ -5,7 +5,7 @@
   gh_user: purejava
   repo: cryptomator-bitwarden
   img: https://raw.githubusercontent.com/purejava/cryptomator-bitwarden/develop/cryptomator-bitwarden.svg
-  desc: This plug-in extends the functionality of Cryptomator. With this plug-in configured, Cryptomator can use Bitwarden Secrets Manager as a backend to store and retrieve passwords for vaults.
+  desc: This plug-in extends the functionality of Cryptomator. With this plug-in dropped-in, Cryptomator can use Bitwarden Secrets Manager as a backend to store and retrieve passwords for vaults.
 
 - name: Update indicator for Fedora (GNOME Shell extension)
   gh_user: purejava
