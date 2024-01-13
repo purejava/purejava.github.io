@@ -1,6 +1,12 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Plug-in for Cryptomator to store vault passwords in Bitwarden Secrets Manager
+  gh_user: purejava
+  repo: cryptomator-bitwarden
+  img: https://raw.githubusercontent.com/purejava/cryptomator-bitwarden/develop/cryptomator-bitwarden.svg
+  desc: This plug-in extends the functionality of Cryptomator. With this plug-in configured, Cryptomator can use Bitwarden Secrets Manager as a backend to store and retrieve passwords for vaults.
+
 - name: Update indicator for Fedora (GNOME Shell extension)
   gh_user: purejava
   repo: fedora-update
