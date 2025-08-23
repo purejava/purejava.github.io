@@ -1,6 +1,12 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: EXIF Time Shift
+  gh_user: purejava
+  repo: exif-time-shift
+  img: https://raw.githubusercontent.com/purejava/exif-time-shift.svg
+  desc: A desktop app to scan a directory of photos, check the Device/Camera Model, the photos were taken with, and apply a time offset to EXIF DateTimeOriginal and DateTimeDigitized for the selected Device/Camera Model using Apache Commons Imaging (lossless where possible).
+
 - name: Flatpak Update And Restart
   gh_user: purejava
   repo: FlatpakUpdateAndRestart
