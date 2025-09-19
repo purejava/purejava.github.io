@@ -1,6 +1,12 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Secret Service
+  gh_user: purejava
+  repo: secret-service
+  img: https://raw.githubusercontent.com/purejava/secret-service/main/top-secret.svg
+  desc: A Java library for managing secrets on Linux using the secret service DBus interface.
+
 - name: EXIF Time Shift
   gh_user: purejava
   repo: exif-time-shift
