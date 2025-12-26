@@ -7,4 +7,4 @@
 from [tzuehlke/jekyll-uno-timeline](https://github.com/tzuehlke/jekyll-uno-timeline)
 
 # Copyright
-Copyright (C) 2020-2025 Ralph Plawetzki
+Copyright (C) 2020 Ralph Plawetzki
