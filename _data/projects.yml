@@ -61,7 +61,7 @@
   img: https://raw.githubusercontent.com/purejava/keepassxc-proxy-access/master/keepassxc-proxy-access.png
   desc: A Java library to access KeePassXC via its build-in proxy.
 
-- name: KWallet
+- name: KDEWallet
   gh_user: purejava
   repo: kdewallet
   img: https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Breezeicons-apps-48-kwalletmanager.svg/768px-Breezeicons-apps-48-kwalletmanager.svg.png
