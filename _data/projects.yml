@@ -55,12 +55,6 @@
   img: https://raw.githubusercontent.com/purejava/keepassxc-cryptomator/master/keepassxc-cryptomator.png
   desc: This plug-in extends the functionality of Cryptomator. With this plug-in dropped-in, Cryptomator can use a KeePassXC database as a backend to store and retrieve passwords for vaults.
 
-- name: Scrape AVM security notifications
-  gh_user: purejava
-  repo: scrape-avm-security-notifications
-  img: https://raw.githubusercontent.com/purejava/scrape-avm-security-notifications/master/avm_bot.png
-  desc: This is a bot. It parses a list of AVM security notifications and notices, when new notifications appear on the list.
-
 - name: KeePassXC Proxy Access
   gh_user: purejava
   repo: keepassxc-proxy-access
