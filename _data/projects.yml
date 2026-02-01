@@ -8,6 +8,13 @@
   img: https://raw.githubusercontent.com/purejava/secret-service/main/top-secret.svg
   desc: A Java library for managing secrets on Linux using the secret service DBus interface.
 
+- name: Key Rack
+  provider: gnome-gitlab
+  user: World
+  repo: key-rack
+  img: https://gitlab.gnome.org/uploads/-/system/project/avatar/23102/keyrack-logo.png
+  desc: Key Rack allows to view and edit keys, like passwords or tokens, stored by apps. It supports Flatpak secrets as well as system wide secrets.
+
 - name: EXIF Time Shift
   provider: codeberg
   user: purejava
