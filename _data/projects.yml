@@ -3,92 +3,92 @@
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 # provider: github [default] | gitlab | codeberg
 - name: Secret Service
-  gh_user: purejava
+  user: purejava
   repo: secret-service
   img: https://raw.githubusercontent.com/purejava/secret-service/main/top-secret.svg
   desc: A Java library for managing secrets on Linux using the secret service DBus interface.
 
 - name: EXIF Time Shift
   provider: codeberg
-  gh_user: purejava
+  user: purejava
   repo: exif-time-shift
   img: https://codeberg.org/purejava/exif-time-shift/raw/commit/2bfa48f4c69e7368fd2850439d731dcfd4b03f0e/exif-time-shift.svg
   desc: A desktop app to scan a directory of photos, check the Device/Camera Model, the photos were taken with, and apply a time offset to EXIF DateTimeOriginal and DateTimeDigitized for the selected Device/Camera Model using Apache Commons Imaging (lossless where possible).
 
 - name: Flatpak Update And Restart
-  gh_user: purejava
+  user: purejava
   repo: FlatpakUpdateAndRestart
   img: https://raw.githubusercontent.com/purejava/FlatpakUpdateAndRestart/main/FlatpakUpdateAndRestart.svg
   desc: A Java library that gives you access to flatpak on the host to the sandbox over DBus.
 
 - name: Plug-in for Cryptomator to store vault passwords in Bitwarden Secrets Manager
-  gh_user: purejava
+  user: purejava
   repo: cryptomator-bitwarden
   img: https://raw.githubusercontent.com/purejava/cryptomator-bitwarden/develop/cryptomator-bitwarden.svg
   desc: This plug-in extends the functionality of Cryptomator. With this plug-in dropped-in, Cryptomator can use Bitwarden Secrets Manager as a backend to store and retrieve passwords for vaults.
 
 - name: Update indicator for Fedora (GNOME Shell extension)
-  gh_user: purejava
+  user: purejava
   repo: fedora-update
   img: https://raw.githubusercontent.com/purejava/fedora-update/main/icons/fedora-updates-logo.svg
   desc: GNOME Shell update indicator for Fedora Linux.
 
 - name: Java bindings for libayatana-appindicator and libappindicator-gtk3
-  gh_user: purejava
+  user: purejava
   repo: appindicator-gtk3-java
   img: https://raw.githubusercontent.com/purejava/appindicator-gtk3-java/develop/appindicator-gtk3-java.png
   desc: These are new Java bindings for libayatana-appindicator and libappindicator-gtk3, created with jextract on Java 20 preview. They make it possible to build appindicator tray icons from Java applications.
   
 - name: Java bindings for WinSparkle
-  gh_user: purejava
+  user: purejava
   repo: winsparkle-java
   img: https://raw.githubusercontent.com/purejava/winsparkle-java/develop/winsparkle-java.png
   desc: These are new Java bindings for WinSparkle, created with jextract on Java 19 preview. They make it possible to use WinSparkle from Java applications.
 
 - name: Cryptomator as a Flatpak app
-  gh_user: flathub
+  user: flathub
   repo: org.cryptomator.Cryptomator
   img: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Flatpak_Logo.svg/200px-Flatpak_Logo.svg.png
   desc: Made Cryptomator available on Flathub as a Flatpak app.
 
 - name: KeePassXC Cryptomator Plug-in
-  gh_user: purejava
+  user: purejava
   repo: keepassxc-cryptomator
   img: https://raw.githubusercontent.com/purejava/keepassxc-cryptomator/master/keepassxc-cryptomator.png
   desc: This plug-in extends the functionality of Cryptomator. With this plug-in dropped-in, Cryptomator can use a KeePassXC database as a backend to store and retrieve passwords for vaults.
 
 - name: KeePassXC Proxy Access
-  gh_user: purejava
+  user: purejava
   repo: keepassxc-proxy-access
   img: https://raw.githubusercontent.com/purejava/keepassxc-proxy-access/master/keepassxc-proxy-access.png
   desc: A Java library to access KeePassXC via its build-in proxy.
 
 - name: KDEWallet
-  gh_user: purejava
+  user: purejava
   repo: kdewallet
   img: https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Breezeicons-apps-48-kwalletmanager.svg/768px-Breezeicons-apps-48-kwalletmanager.svg.png
   desc: A Java library for storing secrets on linux in a KDE wallet over D-Bus.
 
 - name: plug-in website
-  gh_user: purejava
+  user: purejava
   repo: keepassxc-cryptomator.github.io
   img: https://raw.githubusercontent.com/purejava/keepassxc-cryptomator.github.io/master/screenshot-overview.png
   desc: The Website for the KeePassXC Cryptomator Plug-in.
 
 - name: purejava website
-  gh_user: purejava
+  user: purejava
   repo: purejava.github.io
   img: https://raw.githubusercontent.com/purejava/purejava.github.io/master/screenshot-overview.png
   desc: This website.
 
 - name: Cryptomator
-  gh_user: cryptomator
+  user: cryptomator
   repo: cryptomator
   img: https://cryptomator.org/presskit/cryptomator-logo.png
   desc: I am contributing to this A code quality open source project.
 
 - name: seahorse-nautilus-ext
-  gh_user: gnome
+  user: gnome
   repo: seahorse-nautilus
   img: https://wiki.gnome.org/Apps/Files/Header?action=AttachFile&do=get&target=logo.png
   desc: 'This is seahorse-nautilus from upstream with one feature added: the file extension for encrypted files is configurable via a gsetting.'
