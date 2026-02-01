@@ -1,7 +1,7 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-# provider: github [default] | gitlab | codeberg
+# provider: github [default] | gitlab | codeberg | gnome-gitlab
 - name: Secret Service
   user: purejava
   repo: secret-service
@@ -88,7 +88,8 @@
   desc: I am contributing to this A code quality open source project.
 
 - name: seahorse-nautilus-ext
-  user: gnome
+  provider: gnome-gitlab
+  user: Archive
   repo: seahorse-nautilus
-  img: https://wiki.gnome.org/Apps/Files/Header?action=AttachFile&do=get&target=logo.png
+  img: https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Nautilus.svg
   desc: 'This is seahorse-nautilus from upstream with one feature added: the file extension for encrypted files is configurable via a gsetting.'
