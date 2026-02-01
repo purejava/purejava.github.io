@@ -19,7 +19,7 @@ $(document).ready(function() {
       url: "https://gitlab.gnome.org/api/v4/projects/" + projectPath,
       dataType: "json",
       success: function(data) {
-        let x = data.name;
+        let x = data.path;
         $("div[repo='" + x + "']").find("span[class='star']").html("&nbsp;" + data.star_count);
         $("div[repo='" + x + "']").find("span[class='fork']").html("&nbsp;" + data.forks_count);
         $("div[repo='" + x + "']").find("span[class='watchers']").html("&nbsp;—"); // GitLab does not have watchers
