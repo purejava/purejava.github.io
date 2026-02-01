@@ -2,7 +2,8 @@ console.log("github_api loaded");
 $(document).ready(function() {
   users = []
   repos = []
-  $(".ghbtn").each( function () {
+
+  $(".repobtn[provider='github']").each( function () {
     var user = $(this).attr('user');
     var repo = $(this).attr('repo');
     repos.push(user + '/' + repo);
@@ -10,6 +11,7 @@ $(document).ready(function() {
         users.push($(this).attr('user'))
       }
   })
+
   //console.log(1, repos)
   for (var i = 0; i < repos.length; i++) {
     //console.log("URL: "+"https://api.github.com/repos/" + repos[i]);

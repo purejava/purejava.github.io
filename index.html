@@ -3,43 +3,83 @@ layout: default
 robots: noindex
 ---
 
-<!--<div class="main-post-list">-->
+<ul class="timeline">
+  {% for project in site.data.projects %}
 
-  <ul class="timeline">
-    
-    {% for project in site.data.projects %}
+  {% assign provider = project.provider | default: "github" %}
 
-      <li class="timeline-inverted">
-        <div class="timeline-image">
-          <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
-        </div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4><a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">{{ project.name }}</a></h4>
-          </div>
-          <div class="timeline-body">
-            {% if project.desc %}
-              {{ project.desc | markdownify }}
-            {% else %}
-            <div repotext="{{ project.repo }}">
-              <span class="desc"></div>
-            </div>
-            {% endif %}
-            <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fa fa-star"></i><span class="star"> ...</span></a>&emsp;&emsp;
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fa fa-code-fork"></i><span class="fork"> ...</span></a>&emsp;&emsp;
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="far fa-eye"></i><span class="watchers"> ...</span></a>
-              <div style="height: 10px;"></div>
-          </div>
-        </div>
-      </li>
-    {% endfor %}
-    <!--
-    <li class="timeline-inverted">
-      <div class="timeline-image">
-        <img class="user-image" src="{{site.baseurl}}{{ site.timeline-img }}" alt="">
+  <li class="timeline-inverted">
+    <div class="timeline-image">
+      <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
+    </div>
+
+    <div class="timeline-panel">
+      <div class="timeline-heading">
+        {% if provider == "gitlab" %}
+          <h4>
+            <a href="https://gitlab.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">
+              {{ project.name }}
+            </a>
+          </h4>
+        {% else %}
+          <h4>
+            <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">
+              {{ project.name }}
+            </a>
+          </h4>
+        {% endif %}
       </div>
-    </li> -->
-  </ul>
 
-<!--</div>-->
+      <div class="timeline-body">
+        {% if project.desc %}
+          {{ project.desc | markdownify }}
+        {% else %}
+          <div repotext="{{ project.repo }}">
+            <span class="desc"></span>
+          </div>
+        {% endif %}
+
+        <div
+          class="repobtn"
+          provider="{{ provider }}"
+          user="{{ project.gh_user }}"
+          repo="{{ project.repo }}"
+          style="margin-top: 10px;"
+        >
+
+          {% if provider == "gitlab" %}
+            <a target="_blank"
+               href="https://gitlab.com/{{ project.gh_user }}/{{ project.repo }}/-/starrers">
+              <i class="fa fa-star"></i><span class="star"> ...</span>
+            </a>&emsp;&emsp;
+
+            <a target="_blank"
+               href="https://gitlab.com/{{ project.gh_user }}/{{ project.repo }}/-/forks">
+              <i class="fa fa-code-fork"></i><span class="fork"> ...</span>
+            </a>
+
+          {% else %}
+            <a target="_blank"
+               href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers">
+              <i class="fa fa-star"></i><span class="star"> ...</span>
+            </a>&emsp;&emsp;
+
+            <a target="_blank"
+               href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network">
+              <i class="fa fa-code-fork"></i><span class="fork"> ...</span>
+            </a>&emsp;&emsp;
+
+            <a target="_blank"
+               href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers">
+              <i class="far fa-eye"></i><span class="watchers"> ...</span>
+            </a>
+          {% endif %}
+
+          <div style="height: 10px;"></div>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  {% endfor %}
+</ul>
