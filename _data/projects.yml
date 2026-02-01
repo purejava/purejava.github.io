@@ -1,6 +1,7 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+# provider: github [default] | gitlab | codeberg
 - name: Secret Service
   gh_user: purejava
   repo: secret-service
@@ -8,9 +9,10 @@
   desc: A Java library for managing secrets on Linux using the secret service DBus interface.
 
 - name: EXIF Time Shift
+  provider: codeberg
   gh_user: purejava
   repo: exif-time-shift
-  img: https://raw.githubusercontent.com/purejava/exif-time-shift/main/exif-time-shift.svg
+  img: https://codeberg.org/purejava/exif-time-shift/raw/commit/2bfa48f4c69e7368fd2850439d731dcfd4b03f0e/exif-time-shift.svg
   desc: A desktop app to scan a directory of photos, check the Device/Camera Model, the photos were taken with, and apply a time offset to EXIF DateTimeOriginal and DateTimeDigitized for the selected Device/Camera Model using Apache Commons Imaging (lossless where possible).
 
 - name: Flatpak Update And Restart

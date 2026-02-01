@@ -15,7 +15,13 @@ robots: noindex
 
     <div class="timeline-panel">
       <div class="timeline-heading">
-        {% if provider == "gitlab" %}
+        {% if provider == "codeberg" %}
+          <h4>
+            <a href="https://codeberg.org/{{ project.gh_user }}/{{ project.repo }}" target="_blank">
+              {{ project.name }}
+            </a>
+          </h4>
+        {% elsif provider == "gitlab" %}
           <h4>
             <a href="https://gitlab.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">
               {{ project.name }}
@@ -47,32 +53,47 @@ robots: noindex
           style="margin-top: 10px;"
         >
 
-          {% if provider == "gitlab" %}
+          {% if provider == "codeberg" %}
+
             <a target="_blank"
-               href="https://gitlab.com/{{ project.gh_user }}/{{ project.repo }}/-/starrers">
+              href="https://codeberg.org/{{ project.gh_user }}/{{ project.repo }}/stars">
               <i class="fa fa-star"></i><span class="star"> ...</span>
             </a>&emsp;&emsp;
 
             <a target="_blank"
-               href="https://gitlab.com/{{ project.gh_user }}/{{ project.repo }}/-/forks">
+              href="https://codeberg.org/{{ project.gh_user }}/{{ project.repo }}/forks">
+              <i class="fa fa-code-fork"></i><span class="fork"> ...</span>
+            </a>
+
+          {% elsif provider == "gitlab" %}
+
+            <a target="_blank"
+              href="https://gitlab.com/{{ project.gh_user }}/{{ project.repo }}/-/starrers">
+              <i class="fa fa-star"></i><span class="star"> ...</span>
+            </a>&emsp;&emsp;
+
+            <a target="_blank"
+              href="https://gitlab.com/{{ project.gh_user }}/{{ project.repo }}/-/forks">
               <i class="fa fa-code-fork"></i><span class="fork"> ...</span>
             </a>
 
           {% else %}
+
             <a target="_blank"
-               href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers">
+              href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers">
               <i class="fa fa-star"></i><span class="star"> ...</span>
             </a>&emsp;&emsp;
 
             <a target="_blank"
-               href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network">
+              href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network">
               <i class="fa fa-code-fork"></i><span class="fork"> ...</span>
             </a>&emsp;&emsp;
 
             <a target="_blank"
-               href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers">
+              href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers">
               <i class="far fa-eye"></i><span class="watchers"> ...</span>
             </a>
+
           {% endif %}
 
           <div style="height: 10px;"></div>
