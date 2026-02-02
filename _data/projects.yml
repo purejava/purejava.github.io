@@ -95,8 +95,8 @@
   desc: I am contributing to this A code quality open source project.
 
 - name: seahorse-nautilus-ext
-  provider: gnome-gitlab
-  user: Archive
-  repo: seahorse-nautilus
+  provider: github
+  user: purejava
+  repo: seahorse-nautilus-ext
   img: https://static.gnome.org/catalog/app-icon/scalable/org.gnome.Nautilus.svg
   desc: 'This is seahorse-nautilus from upstream with one feature added: the file extension for encrypted files is configurable via a gsetting.'
